@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>PDF Viewer</title>
+    <title>Tutkimustiedote</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #fafafa;
             display: flex;
-            flex-direction: column;
-            height: 100vh;
+            justify-content: center;
         }
-        header {
-            padding: 1rem;
-            background: #f5f5f5;
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 2rem;
+        }
+        h1 {
             text-align: center;
-            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+        }
+        strong {
             font-weight: bold;
-        }
-        .pdf-container {
-            flex: 1;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        @media (max-width: 768px) {
-            header {
-                font-size: 1rem;
-                padding: 0.8rem;
-            }
-            .pdf-container iframe {
-                height: calc(100vh - 3rem);
-            }
         }
     </style>
 </head>
 <body>
-<div class="pdf-container">
-    <iframe src="Tutkimustiedote.pdf"></iframe>
+
+<div class="container">
+    <h1>Tutkimustiedote</h1>
+
+    <p><strong>Tutkimuksen nimi:</strong> Läheisten tuen tarpeet kaksisuuntaisen mielialahäiriön yhteydessä</p>
+
+    <p><strong>Tutkijat:</strong> Sosionomiopiskelijat (Diak AMK) Alexandra Lidvall ja Maria Koivuniemi</p>
+
+    <p><strong>Toimeksiantaja:</strong> FinFami Ry</p>
+
+    <p><strong>Tuloksista tiedottaminen:</strong> Tutkimusraportti julkaistaan opinnäytetyönä Theseus-nettisivulla.</p>
+
+    <p><strong>Lisätiedot:</strong> Alexandra Lidvall (alexandra.lidvall@student.diak.fi) ja Maria Koivuniemi (maria.koivuniemi@student.diak.fi).</p>
+
+    <p>
+        Tämän kyselyn tarkoituksena on selvittää, miten läheisen kaksisuuntainen mielialahäiriö vaikuttaa
+        perheenjäsenen elämään, millaista tukea he tarvitsevat ja kuinka hyvin he kokevat olevansa informoituja
+        sairaudesta ja sen hoidosta. Vastaukset auttavat ymmärtämään paremmin perheiden kokemuksia ja
+        kehittämään tarkoituksenmukaisia tukipalveluja jatkossa. Tutkimukseen osallistuminen on vapaaehtoista ja
+        anonyymia.
+    </p>
+
+    <p><strong>Osallistumisen kesto:</strong> Kyselyyn vastaaminen kestää noin 5–10 minuuttia.</p>
+
+    <p>
+        <strong>Ohje:</strong> Vastaattehan kaikkiin kysymyksiin. Kysymyksiin 2–8 voi valita useita
+        vastausvaihtoehtoja. Kysymykset 9 ja 10 ovat avoimia, ja toivomme, että vastaat niihin mahdollisimman
+        tarkasti ja omiin kokemuksiisi pohjautuen.
+    </p>
+
+    <p>Palaa kyselyyn sulkemalla tämä sivu.</p>
 </div>
+
 </body>
 </html>
